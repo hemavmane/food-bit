@@ -1,0 +1,132 @@
+/* styles.css */
+.square-radio .MuiRadio-root {
+  border-radius: 0px !important;
+  width: 15px !important;
+  height: 15px !important;
+}
+.conte {
+  border: 1px solid rgb(170, 40, 40);
+  border-radius: 100%;
+  border-top: 4px solid rgb(170, 40, 40);
+  border-left: 4px solid rgb(170, 40, 40);
+}
+.crsr{
+  cursor: pointer;
+}
+.selected {
+  background-color: green !important;
+  color: white !important;
+}
+.brd {
+  border-radius: 100px !important;
+  cursor: pointer !important;
+}
+:root {
+  --font-family: "Inter", sans-serif;
+}
+p {
+  font-family: "Inter", sans-serif;
+}
+.barb {
+  display: block;
+  /* height: 2px; */
+  background-color: grey; /* Grey color for incomplete bars */
+  margin-bottom: 10px; /* Adjust as needed */
+  border-radius: 10px;
+}
+.btnbrd2 {
+  background-color: green !important;
+  border-radius: 50px !important;
+  color: white !important;
+}
+Button {
+  text-transform: none !important;
+  color: black !important;
+}
+.btnbrd {
+  border-radius: 10px !important;
+  background-color: rgba(128, 128, 128, 0.26);
+  border: none;
+  color: white;
+}
+.btnbrd1 {
+  background-color: green;
+}
+.bar {
+  display: block;
+  /* height: 2px; */
+  background-color: rgb(56, 180, 18); /* Sky blue color for completed bars */
+  margin-bottom: 10px; /* Adjust as needed */
+}
+
+body {
+  font-family: var(--font-family);
+}
+.container-animation {
+  animation: changeColor 5s infinite alternate;
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: #cc74cc; /* Purple */
+    color: white;
+  }
+  50% {
+    background-color: #b82af5; /* Dark Violet */
+    color: white;
+  }
+  100% {
+    background-color: #a24edf; /* Indigo */
+    color: white;
+  }
+}
+
+/* styles.css */
+
+@keyframes bubble {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-100px) scale(0.8);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+.txr {
+  color: red;
+}
+.links {
+  text-decoration: none;
+}
+.brd2 {
+  border: 1px solid black !important;
+}
+.bgclr {
+  background-color: green !important;
+  border: none !important;
+}
+.bubble-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: -1;
+}
+
+.bubble {
+  position: absolute;
+  background-color: #4b0082;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  animation: bubble 5s infinite;
+}
+
+/* Optional: Add styles for the container or adjust bubble colors, sizes, etc. */
